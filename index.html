@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Log in and Sign up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form form-hidden" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_message form_message-error"></div>
+            <div class="form_input-group">
+               <input type="text" class="form_input" autofocus placeholder="Username or Email">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <div class="form_input-group">
+               <input type="password" class="form_input" autofocus placeholder="Password">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <button class="form_button" type="submit">Submit</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot your Password?</a>
+            </p>
+            <p class="form_text">
+                <a class="form_link" id="linkCreateAccount" href="./">Don't have an account? click here</a>
+            </p>
+        </form>
+        <form action="" class="form" id="createAccount">
+            <h1 class="form_title">Create Account</h1>
+            <div class="form_message form_message-error"></div>
+            <div class="form_input-group">
+               <input type="text" class="form_input" id="username" autofocus placeholder="Username" autocomplete="off">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <div class="form_input-group">
+               <input type="text" class="form_input" id="email" autofocus placeholder="Email" autocomplete="off">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <div class="form_input-group">
+               <input type="tel" class="form_input" id="phoone" autofocus placeholder="Contact" autocomplete="off">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <div class="form_input-group">
+               <input type="password" class="form_input" id="password" autofocus placeholder="Password" autocomplete="off">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <div class="form_input-group">
+               <input type="password" class="form_input" id="cpassword" autofocus placeholder="Confirm Password" autocomplete="off">
+               <div class="form_input-error-message"></div>    
+            </div>
+            <button class="form_button" value="Submit" type="submit">Submit</button>
+            
+            <p class="form_text">
+                <a class="form_link" id="linkLogin" href="">Already have an account? click here to Sign in</a>
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>
